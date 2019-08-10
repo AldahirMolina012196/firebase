@@ -11,7 +11,6 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule,
     AngularFireModule.initializeApp({
       apiKey: 'AIzaSyBIM6XVuaqeBDtyyB9Ef1U5oUv9Cue9BK8',
       authDomain: 'first-firebase-angular.firebaseapp.com',
@@ -21,6 +20,7 @@ import { AppComponent } from './app.component';
       messagingSenderId: '306103315077',
     }),
     AngularFirestoreModule,
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
